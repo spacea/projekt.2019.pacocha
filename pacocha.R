@@ -17,8 +17,7 @@ length.line <- function(x1, y1, x2, y2){
 
 # Kwadrat
 
-# Czy figura może być kwadratem? Warunek na podstawie odległości od wierzchołków
-#ków.
+# Czy figura może być kwadratem? Warunek na podstawie odległości od wierzchołków.
 
 hwdp_can.sqr <- function(x1, y1, x2, y2, x3, y3, x4, y4){
   a <- length.line(x1, y1, x2, y2)
@@ -106,3 +105,4 @@ hwdp_plot.sqr <- function(x1, y1, x2, y2, x3, y3, x4, y4){
 }
 
 hwdp_plot.sqr(0,0,5,0,5,5,0,5) 
+
