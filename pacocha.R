@@ -301,3 +301,116 @@ hwdp_plot.rec <- function(x1, y1, x2, y2, x3, y3, x4, y4){
 
 hwdp_plot.rec(0,0,4,0,4,5,0,5)
 hwdp_plot.rec(-5,-5,5,-5,5,5,-5,5)
+
+
+# ROMB
+
+hwdp_can.rho <- function(x1, y1, x2, y2, x3, y3, x4, y4){
+  a <- length.line(x1, y1, x2, y2)
+  b <- length.line(x2, y2, x3, y3)
+  c <- length.line(x3, y3, x4, y4)
+  d <- length.line(x4, y4, x1, y1)
+  
+  if(angle.cos(x1, y1, x2, y2, x4, y4) == sqrt(2) / 2){
+    TRUE
+  } else {
+    FALSE
+  }
+  if(angle.cos(x2, y2, x3, y3, x1, y1) == -sqrt(2) / 2){
+    TRUE
+  } else {
+    FALSE
+  }
+  if(angle.cos(x3, y3, x4, y4, x2, y2) == sqrt(2) / 2){
+    TRUE
+  } else {
+    FALSE
+  }
+  if(angle.cos(x4, y4, x1, y1, x3, y3) == -sqrt(2) / 2){
+    TRUE
+  } else {
+    FALSE
+  }
+  if(a == b){
+    TRUE
+  } else {
+    FALSE
+  }
+  if(a == c){
+    TRUE
+  } else {
+    FALSE
+  }
+  if(a == d){
+    TRUE
+  } else {
+    FALSE
+  }
+  if(b == c){
+    TRUE
+  } else {
+    FALSE
+  }
+  if(b == d){
+    TRUE
+  } else {
+    FALSE
+  }
+  if(c == d){
+    TRUE
+  } else {
+    FALSE
+  }
+  
+}
+
+hwdp_can.rho(6,1,1,3,-4,1,1,-1)
+hwdp_can.rho(4,0,0,1,-4,0,0,-1)
+
+# Obwód rombu
+
+hwdp_par.rho <- function(x1, y1, x2, y2, x3, y3, x4, y4){
+  a <- length.line(x1, y1, x2, y2)
+  if (hwdp_can.rho(x1, y1, x2, y2, x3, y3, x4, y4) == FALSE){
+    stop("The geometric figure is not a rhombus") 
+  } else {
+    a * 4
+  }
+}
+
+hwdp_par.rho(6,1,1,3,-4,1,1,-1)
+hwdp_par.rho(4,0,0,1,-4,0,0,-1)
+
+# Pole rombu
+
+hwdp_area.rho <- function(x1, y1, x2, y2, x3, y3, x4, y4){
+  a <- length.line(x1, y1, x2, y2)
+  if (hwdp_can.sqr(x1, y1, x2, y2, x3, y3, x4, y4) == FALSE){
+    stop("The geometric figure is not a rhombus") 
+  } else {
+   abs(a ^ 2 * angle.cos(x2, y2, x3, y3, x1, y1))
+  }
+}
+
+hwdp_area.rho(6,1,1,3,-4,1,1,-1)
+hwdp_area.rho(4,0,0,1,-4,0,0,-1)
+
+# Plot rombu
+
+hwdp_plot.rho <- function(x1, y1, x2, y2, x3, y3, x4, y4){
+  if(hwdp_can.rho(x1, y1, x2, y2, x3, y3, x4, y4) == TRUE){
+    x <- c(x1, x2, x3, x4)
+    y <- c(y1, y2, y3, y4)
+    plot(x, y)
+    lines(c(x[1], x[2]), c(y[1], y[2]))
+    lines(c(x[2], x[3]), c(y[2], y[3]))
+    lines(c(x[3], x[4]), c(y[3], y[4]))
+    lines(c(x[4], x[1]), c(y[4], y[1]))
+  } else {
+    stop("The geometric figure is not a rhombus")
+  }
+}
+
+hwdp_plot.rho(6,1,1,3,-4,1,1,-1)
+hwdp_plot.rho(4,0,0,1,-4,0,0,-1)
+
