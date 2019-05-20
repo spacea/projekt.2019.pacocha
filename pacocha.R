@@ -104,6 +104,7 @@ hwdp_can.sqr <- function(x1, y1, x2, y2, x3, y3, x4, y4){
 }
 
 hwdp_can.sqr(0,0,1/2*sqrt(1),1/2*sqrt(1),0,sqrt(1),-1/2*sqrt(1),1/2*sqrt(1))
+hwdp_can.sqr(0,0,5,0,5,5,0,5)
 
 # Obwód kwadratu na podstawie iloczynu jednego z jego boków.
 
@@ -117,6 +118,7 @@ hwdp_par.sqr <- function(x1, y1, x2, y2, x3, y3, x4, y4){
 }  
 
 hwdp_par.sqr(0,0,1/2*sqrt(1),1/2*sqrt(1),0,sqrt(1),-1/2*sqrt(1),1/2*sqrt(1))
+hwdp_par.sqr(0,0,5,0,5,5,0,5)
 
 # Pole kwadratu na podstawie kwadratu jednego z jego boku. 
 
@@ -130,6 +132,7 @@ hwdp_area.sqr <- function(x1, y1, x2, y2, x3, y3, x4, y4){
 } 
 
 hwdp_area.sqr(0,0,1/2*sqrt(1),1/2*sqrt(1),0,sqrt(1),-1/2*sqrt(1),1/2*sqrt(1))
+hwdp_area.sqr(0,0,5,0,5,5,0,5)
 
 # Długość przekątnej kwadratu obliczana na podstawie długości jednego
 # z jego boków. 
@@ -144,10 +147,12 @@ hwdp_dia.sqr <- function(x1, y1, x2, y2, x3, y3, x4, y4){
 } 
 
 hwdp_dia.sqr(0,0,1/2*sqrt(1),1/2*sqrt(1),0,sqrt(1),-1/2*sqrt(1),1/2*sqrt(1))
+hwdp_dia.sqr(0,0,5,0,5,5,0,5)
 
 # Rysowanie kwadratu na podstawie współrzędnych jego wierzchołków.
 
 hwdp_plot.sqr <- function(x1, y1, x2, y2, x3, y3, x4, y4){
+  if(hwdp_can.rec(x1, y1, x2, y2, x3, y3, x4, y4) == TRUE){
   x <- c(x1, x2, x3, x4)
   y <- c(y1, y2, y3, y4)
   plot(x, y)
@@ -155,9 +160,13 @@ hwdp_plot.sqr <- function(x1, y1, x2, y2, x3, y3, x4, y4){
   lines(c(x[2], x[3]), c(y[2], y[3]))
   lines(c(x[3], x[4]), c(y[3], y[4]))
   lines(c(x[4], x[1]), c(y[4], y[1]))
+  } else {
+    stop("The geometric figure is not a square")
+  }
 }
 
 hwdp_plot.sqr(0,0,1/2*sqrt(1),1/2*sqrt(1),0,sqrt(1),-1/2*sqrt(1),1/2*sqrt(1)) 
+hwdp_plot.sqr(0,0,5,0,5,5,0,5)
 
 # Czworobok
 
@@ -171,6 +180,9 @@ hwdp_par.pol <- function(x1, y1, x2, y2, x3, y3, x4, y4){
     a + b + c + d
 } 
 
+hwdp_par.pol(0,0,1/2*sqrt(1),1/2*sqrt(1),0,sqrt(2),-1/2*sqrt(1),1/2*sqrt(1))
+hwdp_par.pol(-2,2,3,3,7,7,0,20)
+
 # Rysowanie czworoboku na podstawie współrzędnych jego wierzchołków.
 
 hwdp_plot.pol <- function(x1, y1, x2, y2, x3, y3, x4, y4){
@@ -183,6 +195,8 @@ hwdp_plot.pol <- function(x1, y1, x2, y2, x3, y3, x4, y4){
   lines(c(x[4], x[1]), c(y[4], y[1]))
 }
 
+hwdp_plot.pol(0,0,1/2*sqrt(1),1/2*sqrt(1),0,sqrt(2),-1/2*sqrt(1),1/2*sqrt(1))
+hwdp_plot.pol(-2,2,3,3,7,7,0,20)
 
 # Prostokąt.
 
@@ -226,6 +240,7 @@ hwdp_can.rec <- function(x1, y1, x2, y2, x3, y3, x4, y4){
 }
 
 hwdp_can.rec(0,0,4,0,4,5,0,5)
+hwdp_can.rec(-5,-5,5,-5,5,5,-5,5)
 
 # Obwód prostokąta na podstawie sumy odległości wierzchołków. 
 
@@ -239,6 +254,9 @@ hwdp_par.rec <- function(x1, y1, x2, y2, x3, y3, x4, y4){
   }
 } 
 
+hwdp_par.rec(0,0,4,0,4,5,0,5)
+hwdp_par.rec(-5,-5,5,-5,5,5,-5,5)
+
 # Pole prostokąta na podstawie iloczynu jego boków.
 
 hwdp_area.rec <- function(x1, y1, x2, y2, x3, y3, x4, y4){
@@ -251,6 +269,9 @@ hwdp_area.rec <- function(x1, y1, x2, y2, x3, y3, x4, y4){
   }
 } 
 
+hwdp_area.rec(0,0,4,0,4,5,0,5)
+hwdp_area.rec(-5,-5,5,-5,5,5,-5,5)
+
 hwdp_dia.rec <- function(x1, y1, x2, y2, x3, y3, x4, y4){
   a <- length.line(x1, y1, x2, y2)
   b <- length.line(x2, y2, x3, y3)
@@ -261,8 +282,11 @@ hwdp_dia.rec <- function(x1, y1, x2, y2, x3, y3, x4, y4){
   }
 } 
 
+hwdp_dia.rec(0,0,4,0,4,5,0,5)
+hwdp_dia.rec(-5,-5,5,-5,5,5,-5,5)
 
 hwdp_plot.rec <- function(x1, y1, x2, y2, x3, y3, x4, y4){
+ if(hwdp_can.rec(x1, y1, x2, y2, x3, y3, x4, y4) == TRUE){
   x <- c(x1, x2, x3, x4)
   y <- c(y1, y2, y3, y4)
   plot(x, y)
@@ -270,6 +294,10 @@ hwdp_plot.rec <- function(x1, y1, x2, y2, x3, y3, x4, y4){
   lines(c(x[2], x[3]), c(y[2], y[3]))
   lines(c(x[3], x[4]), c(y[3], y[4]))
   lines(c(x[4], x[1]), c(y[4], y[1]))
+ } else {
+   stop("The geometric figure is not a rectangle")
+ }
 }
 
-hwdp_plot.pol(0,0,1/2*sqrt(1),1/2*sqrt(1),0,sqrt(2),-1/2*sqrt(1),1/2*sqrt(1))
+hwdp_plot.rec(0,0,4,0,4,5,0,5)
+hwdp_plot.rec(-5,-5,5,-5,5,5,-5,5)
