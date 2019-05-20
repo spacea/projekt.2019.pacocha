@@ -53,52 +53,52 @@ hwdp_can.sqr <- function(x1, y1, x2, y2, x3, y3, x4, y4){
   if(angle.cos(x1, y1, x2, y2, x4, y4) == 0){
     TRUE
   } else {
-    FALSE
+    stop("The geometric figure is not a square") 
   }
   if(angle.cos(x2, y2, x3, y3, x1, y1) == 0){
     TRUE
   } else {
-    FALSE
+    stop("The geometric figure is not a square") 
   }
   if(angle.cos(x3, y3, x4, y4, x2, y2) == 0){
     TRUE
   } else {
-    FALSE
+    stop("The geometric figure is not a square") 
   }
   if(angle.cos(x4, y4, x1, y1, x3, y3) == 0){
     TRUE
   } else {
-    FALSE
+    stop("The geometric figure is not a square") 
   }
   if(a == b){
     TRUE
   } else {
-    FALSE
+    stop("The geometric figure is not a square") 
   }
   if(a == c){
     TRUE
   } else {
-    FALSE
+    stop("The geometric figure is not a square") 
   }
   if(a == d){
     TRUE
   } else {
-    FALSE
+    stop("The geometric figure is not a square") 
   }
   if(b == c){
     TRUE
   } else {
-    FALSE
+    stop("The geometric figure is not a square") 
   }
   if(b == d){
     TRUE
   } else {
-    FALSE
+    stop("The geometric figure is not a square") 
   }
   if(c == d){
     TRUE
   } else {
-    FALSE
+    stop("The geometric figure is not a square") 
   }
   
 }
@@ -210,32 +210,32 @@ hwdp_can.rec <- function(x1, y1, x2, y2, x3, y3, x4, y4){
   if(angle.cos(x1, y1, x2, y2, x4, y4) == 0){
     TRUE
   } else {
-    FALSE
+    stop("The geometric figure is not a rectangle")
   }
   if(angle.cos(x2, y2, x3, y3, x1, y1) == 0){
     TRUE
   } else {
-    FALSE
+    stop("The geometric figure is not a rectangle")
   }
   if(angle.cos(x3, y3, x4, y4, x2, y2) == 0){
     TRUE
   } else {
-    FALSE
+    stop("The geometric figure is not a rectangle")
   }
   if(angle.cos(x4, y4, x1, y1, x3, y3) == 0){
     TRUE
   } else {
-    FALSE
+    stop("The geometric figure is not a rectangle")
   }
   if (a == c){
     TRUE
   } else {
-    FALSE
+    stop("The geometric figure is not a rectangle")
   }
   if (b == d){
     TRUE
   } else {
-    FALSE
+    stop("The geometric figure is not a rectangle")
   }
 }
 
@@ -311,61 +311,62 @@ hwdp_can.rho <- function(x1, y1, x2, y2, x3, y3, x4, y4){
   c <- length.line(x3, y3, x4, y4)
   d <- length.line(x4, y4, x1, y1)
   
-  if(angle.cos(x1, y1, x2, y2, x4, y4) == sqrt(2) / 2){
+  if(angle.cos(x1, y1, x2, y2, x4, y4) == 1 / 2){
     TRUE
   } else {
-    FALSE
+    stop("The geometric figure is not a rhombus")
   }
-  if(angle.cos(x2, y2, x3, y3, x1, y1) == -sqrt(2) / 2){
+  if(angle.cos(x2, y2, x3, y3, x1, y1) == -1 / 2){
     TRUE
   } else {
-    FALSE
+    stop("The geometric figure is not a rhombus")
   }
-  if(angle.cos(x3, y3, x4, y4, x2, y2) == sqrt(2) / 2){
+  if(angle.cos(x3, y3, x4, y4, x2, y2) == 1 / 2){
     TRUE
   } else {
-    FALSE
+    stop("The geometric figure is not a rhombus")
   }
-  if(angle.cos(x4, y4, x1, y1, x3, y3) == -sqrt(2) / 2){
+  if(angle.cos(x4, y4, x1, y1, x3, y3) == -1 / 2){
     TRUE
   } else {
-    FALSE
+    stop("The geometric figure is not a rhombus")
   }
   if(a == b){
     TRUE
   } else {
-    FALSE
+    stop("The geometric figure is not a rhombus")
   }
   if(a == c){
     TRUE
   } else {
-    FALSE
+    stop("The geometric figure is not a rhombus")
   }
   if(a == d){
     TRUE
   } else {
-    FALSE
+    stop("The geometric figure is not a rhombus")
   }
   if(b == c){
     TRUE
   } else {
-    FALSE
+    stop("The geometric figure is not a rhombus")
   }
   if(b == d){
     TRUE
   } else {
-    FALSE
+    stop("The geometric figure is not a rhombus")
   }
   if(c == d){
     TRUE
   } else {
-    FALSE
+    stop("The geometric figure is not a rhombus")
   }
   
 }
 
 hwdp_can.rho(6,1,1,3,-4,1,1,-1)
 hwdp_can.rho(4,0,0,1,-4,0,0,-1)
+hwdp_plot.pol(5,1,1,4,-3,1,1,-2)
 
 # Obwód rombu
 
