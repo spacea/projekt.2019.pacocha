@@ -15,6 +15,31 @@ length.line <- function(x1, y1, x2, y2){
   }
 }
 
+# Kąty
+
+angle.cos <- function(x1, y1, x2, y2, x3, y3){
+  
+  if(is.numeric(x1) == FALSE){
+    stop("First argument is non-numeric")
+  } else if(is.numeric(y1) == FALSE){
+    stop("Second argument is non-numeric")
+  } else if(is.numeric(x2) == FALSE){
+    stop("Third argument is non-numeric")
+  } else if(is.numeric(y2) == FALSE){
+    stop("Fourth argument is non-numeric")
+  } else if(is.numeric(x3) == FALSE){
+    stop("Fifth argument is non-numeric")
+  } else if(is.numeric(y3) == FALSE){
+    stop("Sixth argument is non-numeric")
+  } else {
+    ux1x2 <- c((x2 - x1), (y2 - y1))
+    ux2x3 <- c((x3 - x2), (y3 - y2))
+    ux1x3 <- c((x3 - x1), (y3 - y1))
+    
+    ((ux1x2[1] * ux1x3[1]) + (ux1x2[2] * ux1x3[2])) / (sqrt((ux1x2[1])^2 + (ux1x2[2]^2)) * sqrt((ux1x3[1])^2 + (ux1x3[2]^2)))
+  }
+}
+
 # Kwadrat
 
 # Czy figura może być kwadratem? Warunek na podstawie odległości od wierzchołków.
@@ -24,6 +49,27 @@ hwdp_can.sqr <- function(x1, y1, x2, y2, x3, y3, x4, y4){
   b <- length.line(x2, y2, x3, y3)
   c <- length.line(x3, y3, x4, y4)
   d <- length.line(x4, y4, x1, y1)
+  
+  if(angle.cos(x1, y1, x2, y2, x4, y4) == 0){
+    TRUE
+  } else {
+    FALSE
+  }
+  if(angle.cos(x2, y2, x3, y3, x1, y1) == 0){
+    TRUE
+  } else {
+    FALSE
+  }
+  if(angle.cos(x3, y3, x4, y4, x2, y2) == 0){
+    TRUE
+  } else {
+    FALSE
+  }
+  if(angle.cos(x4, y4, x1, y1, x3, y3) == 0){
+    TRUE
+  } else {
+    FALSE
+  }
   if(a == b){
     TRUE
   } else {
@@ -56,6 +102,7 @@ hwdp_can.sqr <- function(x1, y1, x2, y2, x3, y3, x4, y4){
   }
   
 }
+
 
 
 # Obwód kwadratu na podstawie iloczynu jednego z jego boków.
@@ -140,6 +187,26 @@ hwdp_can.rec <- function(x1, y1, x2, y2, x3, y3, x4, y4){
   b <- length.line(x2, y2, x3, y3)
   c <- length.line(x3, y3, x4, y4)
   d <- length.line(x4, y4, x1, y1)
+  if(angle.cos(x1, y1, x2, y2, x4, y4) == 0){
+    TRUE
+  } else {
+    FALSE
+  }
+  if(angle.cos(x2, y2, x3, y3, x1, y1) == 0){
+    TRUE
+  } else {
+    FALSE
+  }
+  if(angle.cos(x3, y3, x4, y4, x2, y2) == 0){
+    TRUE
+  } else {
+    FALSE
+  }
+  if(angle.cos(x4, y4, x1, y1, x3, y3) == 0){
+    TRUE
+  } else {
+    FALSE
+  }
   if (a == c){
     TRUE
   } else {
@@ -152,7 +219,7 @@ hwdp_can.rec <- function(x1, y1, x2, y2, x3, y3, x4, y4){
   }
 }
 
-hwdp_area.rec(0,0,4,0,4,5,0,5)
+hwdp_can.rec(0,0,4,0,4,5,0,5)
 
 # Obwód prostokąta na podstawie sumy odległości wierzchołków. 
 
