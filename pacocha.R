@@ -103,7 +103,7 @@ hwdp_can.sqr <- function(x1, y1, x2, y2, x3, y3, x4, y4){
   
 }
 
-
+hwdp_can.sqr(0,0,1/2*sqrt(1),1/2*sqrt(1),0,sqrt(1),-1/2*sqrt(1),1/2*sqrt(1))
 
 # Obwód kwadratu na podstawie iloczynu jednego z jego boków.
 
@@ -116,6 +116,8 @@ hwdp_par.sqr <- function(x1, y1, x2, y2, x3, y3, x4, y4){
   }
 }  
 
+hwdp_par.sqr(0,0,1/2*sqrt(1),1/2*sqrt(1),0,sqrt(1),-1/2*sqrt(1),1/2*sqrt(1))
+
 # Pole kwadratu na podstawie kwadratu jednego z jego boku. 
 
 hwdp_area.sqr <- function(x1, y1, x2, y2, x3, y3, x4, y4){
@@ -126,6 +128,8 @@ hwdp_area.sqr <- function(x1, y1, x2, y2, x3, y3, x4, y4){
     a ^ 2
   }
 } 
+
+hwdp_area.sqr(0,0,1/2*sqrt(1),1/2*sqrt(1),0,sqrt(1),-1/2*sqrt(1),1/2*sqrt(1))
 
 # Długość przekątnej kwadratu obliczana na podstawie długości jednego
 # z jego boków. 
@@ -139,6 +143,8 @@ hwdp_dia.sqr <- function(x1, y1, x2, y2, x3, y3, x4, y4){
   }
 } 
 
+hwdp_dia.sqr(0,0,1/2*sqrt(1),1/2*sqrt(1),0,sqrt(1),-1/2*sqrt(1),1/2*sqrt(1))
+
 # Rysowanie kwadratu na podstawie współrzędnych jego wierzchołków.
 
 hwdp_plot.sqr <- function(x1, y1, x2, y2, x3, y3, x4, y4){
@@ -151,7 +157,7 @@ hwdp_plot.sqr <- function(x1, y1, x2, y2, x3, y3, x4, y4){
   lines(c(x[4], x[1]), c(y[4], y[1]))
 }
 
-hwdp_plot.sqr(0,0,5,0,5,5,0,5) 
+hwdp_plot.sqr(0,0,1/2*sqrt(1),1/2*sqrt(1),0,sqrt(1),-1/2*sqrt(1),1/2*sqrt(1)) 
 
 # Czworobok
 
@@ -265,3 +271,5 @@ hwdp_plot.rec <- function(x1, y1, x2, y2, x3, y3, x4, y4){
   lines(c(x[3], x[4]), c(y[3], y[4]))
   lines(c(x[4], x[1]), c(y[4], y[1]))
 }
+
+hwdp_plot.pol(0,0,1/2*sqrt(1),1/2*sqrt(1),0,sqrt(2),-1/2*sqrt(1),1/2*sqrt(1))
