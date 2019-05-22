@@ -10,7 +10,7 @@
 #' @param y1 Value of the first point on the Y axis.
 #' @param y2 Value of the second point on the Y axis.
 #' @param y3 Value of the third point on the Y axis.
-#' @param y3 Value of the fourth point on the Y axis.
+#' @param y4 Value of the fourth point on the Y axis.
 #'
 #' @return Plot
 #' @export
@@ -20,7 +20,7 @@
 #' fo_plot.sqr(0,0,5,0,5,5,0,5)
 #' fo_plot.sqr(0,0,5,0,5,5,0,5)
 fo_plot.sqr <- function(x1, y1, x2, y2, x3, y3, x4, y4){
-  if(fo_can.rec(x1, y1, x2, y2, x3, y3, x4, y4) == TRUE){
+  if(fo_can.sqr(x1, y1, x2, y2, x3, y3, x4, y4) == TRUE){
     x <- c(x1, x2, x3, x4)
     y <- c(y1, y2, y3, y4)
     plot(x, y)

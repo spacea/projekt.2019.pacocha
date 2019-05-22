@@ -1,6 +1,6 @@
-#' Rectangle parimiter
+#' Rectangle perimiter
 #'
-#' @description Function which calculates a parimiter of a rectangle
+#' @description Function which calculates a perimiter of a rectangle
 #' based on its apexes.
 #'
 #' @param x1 Value of the first point on the X axis.
@@ -16,9 +16,9 @@
 #' @export
 #'
 #' @examples
-#' fo_par.rec(0,0,4,0,4,5,0,5)
-#' fo_par.rec(-5,-5,5,-5,5,5,-5,5)
-fo_par.rec <- function(x1, y1, x2, y2, x3, y3, x4, y4){
+#' fo_per.rec(0,0,4,0,4,5,0,5)
+#' fo_per.rec(-5,-5,5,-5,5,5,-5,5)
+fo_per.rec <- function(x1, y1, x2, y2, x3, y3, x4, y4){
   a <- length.line(x1, y1, x2, y2)
   b <- length.line(x2, y2, x3, y3)
   if (fo_can.rec(x1, y1, x2, y2, x3, y3, x4, y4) == FALSE){
