@@ -1,0 +1,12 @@
+Package: projekt.2019.pacocha
+Title: Figure operations
+Version: 0.1
+Authors@R: 
+    person(given = "Blazej",
+           family = "Koscianski",
+           role = c("aut", "cre"),
+           email = "first.last@example.com")
+Description: 2D figures calculations and plots.
+License: CC0
+Encoding: UTF-8
+LazyData: true
