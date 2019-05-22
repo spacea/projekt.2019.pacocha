@@ -415,3 +415,5 @@ hwdp_plot.rho <- function(x1, y1, x2, y2, x3, y3, x4, y4){
 hwdp_plot.rho(6,1,1,3,-4,1,1,-1)
 hwdp_plot.rho(4,0,0,1,-4,0,0,-1)
 
+# elipse
+
