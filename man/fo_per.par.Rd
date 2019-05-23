@@ -2,7 +2,7 @@
 % Please edit documentation in R/fo_perpar.R
 \name{fo_per.par}
 \alias{fo_per.par}
-\title{Parallelogram perimiter}
+\title{Parallelogram perimeter}
 \usage{
 fo_per.par(xs, ys, r1, r2, alpha, beta)
 }
@@ -21,10 +21,10 @@ fo_per.par(xs, ys, r1, r2, alpha, beta)
 the parallelogram.}
 }
 \value{
-Numerical vector
+Numeric vector
 }
 \description{
-Function which calculates a perimiter of a
+Function which calculates a perimeter of a
 parallelogram.
 }
 \examples{

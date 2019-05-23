@@ -1,6 +1,6 @@
-#' Quadrangle perimiter
+#' Quadrangle perimeter
 #'
-#' @description Function which calculates a quadrangle perimiter
+#' @description Function which calculates a quadrangle perimeter
 #' based on its apexes positions.
 #'
 #' @param x1 Value of the first point on the X axis.

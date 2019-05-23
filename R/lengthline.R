@@ -1,7 +1,7 @@
 #' Length line
 #'
-#' @description Function which caculates length of a line
-#' based on the position of its ends.
+#' @description Function which calculates length of a line
+#' based on the position of its end points.
 #'
 #' @param x1 Value of the first point on the X axis.
 #' @param x2 Value of the second point on the X axis.

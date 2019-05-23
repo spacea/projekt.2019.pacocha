@@ -2,7 +2,7 @@
 % Please edit documentation in R/fo_perrho.R
 \name{fo_per.rho}
 \alias{fo_per.rho}
-\title{Rhombus peremiter}
+\title{Rhombus perimeter}
 \usage{
 fo_per.rho(xs, ys, r1, r2, alpha)
 }
@@ -11,17 +11,17 @@ fo_per.rho(xs, ys, r1, r2, alpha)
 
 \item{ys}{Center point value on the Y axis.}
 
-\item{r1}{Lenght from the center to the apex.}
+\item{r1}{Length from the center to the apex.}
 
-\item{r2}{Lenght from the center to the apex.}
+\item{r2}{Length from the center to the apex.}
 
 \item{alpha}{Angle of rotation.}
 }
 \value{
-Numerical vector
+Numeric vector
 }
 \description{
-Function which peremiter of a rhombus.
+Function which calculates a perimeter of a rhombus.
 }
 \examples{
 fo_per.rho(0,0,1,2,30)

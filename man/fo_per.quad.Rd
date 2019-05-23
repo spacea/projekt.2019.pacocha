@@ -2,7 +2,7 @@
 % Please edit documentation in R/fo_parquad.R
 \name{fo_per.quad}
 \alias{fo_per.quad}
-\title{Quadrangle perimiter}
+\title{Quadrangle perimeter}
 \usage{
 fo_per.quad(x1, y1, x2, y2, x3, y3, x4, y4)
 }
@@ -27,7 +27,7 @@ fo_per.quad(x1, y1, x2, y2, x3, y3, x4, y4)
 Numeric vector
 }
 \description{
-Function which calculates a quadrangle perimiter
+Function which calculates a quadrangle perimeter
 based on its apexes positions.
 }
 \examples{

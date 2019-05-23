@@ -21,7 +21,7 @@ fo_area.par(xs, ys, r1, r2, alpha, beta)
 the parallelogram.}
 }
 \value{
-Numerical vector
+Numeric vector
 }
 \description{
 Function which calculates an area of a

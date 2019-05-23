@@ -12,7 +12,7 @@
 #' @param y3 Value of the third point on the Y axis.
 #' @param y4 Value of the fourth point on the Y axis.
 #'
-#' @return Numerical vector
+#' @return Numeric vector
 #' @export
 #'
 #' @examples

@@ -1,6 +1,6 @@
-#' Rectangle perimiter
+#' Rectangle perimeter
 #'
-#' @description Function which calculates a perimiter of a rectangle
+#' @description Function which calculates a perimeter of a rectangle
 #' based on its apexes.
 #'
 #' @param x1 Value of the first point on the X axis.

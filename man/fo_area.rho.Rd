@@ -11,9 +11,9 @@ fo_area.rho(xs, ys, r1, r2, alpha)
 
 \item{ys}{Center point value on the Y axis.}
 
-\item{r1}{Lenght from the center to the apex.}
+\item{r1}{Length from the center to the apex.}
 
-\item{r2}{Lenght from the center to the apex.}
+\item{r2}{Length from the center to the apex.}
 
 \item{alpha}{Angle of rotation.}
 }

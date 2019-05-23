@@ -16,7 +16,7 @@ fo_area.cir(x1, y1, x2, y2)
 \item{y2}{Point on the circumference on the Y axis.}
 }
 \value{
-Numerical vector
+Numeric vector
 }
 \description{
 Function which calculates an area of a

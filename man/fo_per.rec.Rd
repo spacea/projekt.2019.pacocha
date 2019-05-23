@@ -2,7 +2,7 @@
 % Please edit documentation in R/fo_parrec.R
 \name{fo_per.rec}
 \alias{fo_per.rec}
-\title{Rectangle perimiter}
+\title{Rectangle perimeter}
 \usage{
 fo_per.rec(x1, y1, x2, y2, x3, y3, x4, y4)
 }
@@ -27,7 +27,7 @@ fo_per.rec(x1, y1, x2, y2, x3, y3, x4, y4)
 Numeric vector
 }
 \description{
-Function which calculates a perimiter of a rectangle
+Function which calculates a perimeter of a rectangle
 based on its apexes.
 }
 \examples{
