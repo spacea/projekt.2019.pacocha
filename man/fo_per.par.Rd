@@ -17,7 +17,7 @@ fo_per.par(xs, ys, r1, r2, alpha, beta)
 
 \item{alpha}{Angle of rotation.}
 
-\item{beta}{Angle between the basis and the left side of 
+\item{beta}{Angle between the basis and the left side of
 the parallelogram.}
 }
 \value{

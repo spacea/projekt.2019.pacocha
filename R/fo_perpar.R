@@ -8,7 +8,7 @@
 #' @param r1 Lenght of the basis.
 #' @param r2 Length of the side.
 #' @param alpha Angle of rotation.
-#' @param beta Angle between the basis and the left side of 
+#' @param beta Angle between the basis and the left side of
 #' the parallelogram.
 #'
 #' @return Numerical vector
@@ -30,7 +30,7 @@ fo_per.par <- function(xs, ys, r1, r2, alpha, beta){
   } else if(is.numeric(beta) == FALSE){
     stop("Sixth argument is non-numeric")
   }
-  
+
   if(beta == 0){
     sin.b <- 0
     cos.b <- 1
@@ -83,6 +83,6 @@ fo_per.par <- function(xs, ys, r1, r2, alpha, beta){
   } else {
     stop("Unfortunately, this angle is not included, please try choosing a less complex one instead.")
   }
-  
+
   2 * r1 + 2 * r2
 }

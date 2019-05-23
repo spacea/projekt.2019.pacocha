@@ -2,16 +2,12 @@ Package: projekt.2019.pacocha
 Title: Figure operations
 Version: 0.1
 Authors@R: c(
-    person(given = "Blazej",
-           family = "Koscianski",
-           role = c("aut", "cre"),
-    person(given = "Patryk",
-           family = "Polomski",
-           role = c("aut", "cre"),
-    person(given = "Jakub",
-           family = "Pacocha",
-           role = c("aut", "cre")
+     person("Jakub", "Pacocha", role = c("cre", "aut"), email = "jakpac1@st.amu.edu.pl"),
+      person("Patryk", "Polomski", role = c("aut"), email = "patpol@st.amu.edu.pl"),
+       person("Blazej", "Koscianski", role = c("aut"), email = "blakos1@st.amu.edu.pl")
+       )
 Description: 2D figures calculations and plots.
 License: MIT
 Encoding: UTF-8
 LazyData: true
+RoxygenNote: 6.1.1
