@@ -3,9 +3,10 @@
 #' @description Function which calculates an area of a hexagon
 #' based on its apexes.
 #'
-#' @param x1 Value of the center point on the X axis.
-#' @param x2 Value of the center point on the X axis.
-#' @param x3 Length of a diamiter.
+#' @param xs Center point value on the X axis.
+#' @param ys Center point value on the Y axis.
+#' @param r Lenght from the center to the apex.
+#' @param alpha Angle of rotation.
 #'
 #' @return Numeric value
 #' @export

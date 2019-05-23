@@ -12,7 +12,7 @@
 #' @export
 #'
 #' @examples
-#' length.line(0,-10,0,10)
+#' length.line(0,-5,0,5)
 #'
 length.line <- function(x1, y1, x2, y2){
   if(is.numeric(x1) == FALSE){
@@ -27,3 +27,4 @@ length.line <- function(x1, y1, x2, y2){
     sqrt(((x2 - x1)^2) + ((y2 - y1)^2))
   }
 }
+

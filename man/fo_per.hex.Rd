@@ -7,29 +7,13 @@
 fo_per.hex(xs, ys, r, alpha = 0)
 }
 \arguments{
-\item{x1}{Value of the first point on the X axis.}
+\item{xs}{Center point value on the X axis.}
 
-\item{x2}{Value of the second point on the X axis.}
+\item{ys}{Center point value on the Y axis.}
 
-\item{x3}{Value of the third point on the X axis.}
+\item{r}{Lenght from the center to the apex.}
 
-\item{x4}{Value of the fourth point on the X axis.}
-
-\item{y1}{Value of the first point on the Y axis.}
-
-\item{y2}{Value of the second point on the Y axis.}
-
-\item{y3}{Value of the third point on the Y axis.}
-
-\item{y4}{Value of the fourth point on the Y axis.}
-
-\item{y5}{Value of the fifth point on the Y axis.}
-
-\item{y6}{Value of the sixth point on the Y axis.}
-
-\item{x5}{Value of the fifth point on the X axis.}
-
-\item{x6}{Value of the sixth point on the X axis.}
+\item{alpha}{Angle of rotation.}
 }
 \value{
 Numeric value

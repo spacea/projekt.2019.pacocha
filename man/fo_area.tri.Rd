@@ -26,5 +26,5 @@ Numeric value
 Function which calculates an area of a triangle.
 }
 \examples{
-fo_area.tri(2,0,10,10,5)
+fo_area.tri(2,0,10,10,5,3)
 }

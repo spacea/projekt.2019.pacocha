@@ -21,7 +21,7 @@ fo_per.quad(x1, y1, x2, y2, x3, y3, x4, y4)
 
 \item{x4}{Value of the fourth point on the X axis.}
 
-\item{y3}{Value of the fourth point on the Y axis.}
+\item{y4}{Value of the fourth point on the Y axis.}
 }
 \value{
 Numeric vector

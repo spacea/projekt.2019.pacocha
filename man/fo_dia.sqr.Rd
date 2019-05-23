@@ -21,7 +21,7 @@ fo_dia.sqr(x1, y1, x2, y2, x3, y3, x4, y4)
 
 \item{x4}{Value of the fourth point on the X axis.}
 
-\item{y3}{Value of the fourth point on the Y axis.}
+\item{y4}{Value of the fourth point on the Y axis.}
 }
 \value{
 Numerical vector
@@ -32,5 +32,5 @@ based on its apexes.
 }
 \examples{
 fo_dia.sqr(0,0,1/2*sqrt(1),1/2*sqrt(1),0,sqrt(1),-1/2*sqrt(1),1/2*sqrt(1))
-fo_dia.sqr(0,0,5,0,5,5,0,5))
+fo_dia.sqr(0,0,5,0,5,5,0,5)
 }

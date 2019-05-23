@@ -15,7 +15,6 @@
 #' @examples
 #' angle.cos(0, 0, 1, 0, 1, 1)
 angle.cos <- function(x1, y1, x2, y2, x3, y3){
-
   if(is.numeric(x1) == FALSE){
     stop("First argument is non-numeric")
   } else if(is.numeric(y1) == FALSE){
@@ -36,5 +35,4 @@ angle.cos <- function(x1, y1, x2, y2, x3, y3){
     ((ux1x2[1] * ux1x3[1]) + (ux1x2[2] * ux1x3[2])) / (sqrt((ux1x2[1])^2 + (ux1x2[2]^2)) * sqrt((ux1x3[1])^2 + (ux1x3[2]^2)))
   }
 }
-
 

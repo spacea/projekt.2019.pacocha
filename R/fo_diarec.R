@@ -10,7 +10,7 @@
 #' @param y1 Value of the first point on the Y axis.
 #' @param y2 Value of the second point on the Y axis.
 #' @param y3 Value of the third point on the Y axis.
-#' @param y3 Value of the fourth point on the Y axis.
+#' @param y4 Value of the fourth point on the Y axis.
 #' @return Numeric vector
 #' @export
 #'

@@ -7,11 +7,13 @@
 fo_area.hex(xs, ys, r, alpha = 0)
 }
 \arguments{
-\item{x1}{Value of the center point on the X axis.}
+\item{xs}{Center point value on the X axis.}
 
-\item{x2}{Value of the center point on the X axis.}
+\item{ys}{Center point value on the Y axis.}
 
-\item{x3}{Length of a diamiter.}
+\item{r}{Lenght from the center to the apex.}
+
+\item{alpha}{Angle of rotation.}
 }
 \value{
 Numeric value

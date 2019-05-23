@@ -2,18 +2,10 @@
 #'
 #' @description Function which calculates perimiter of a hexagon.
 #'
-#' @param x1 Value of the first point on the X axis.
-#' @param x2 Value of the second point on the X axis.
-#' @param x3 Value of the third point on the X axis.
-#' @param x4 Value of the fourth point on the X axis.
-#' @param y1 Value of the first point on the Y axis.
-#' @param y2 Value of the second point on the Y axis.
-#' @param y3 Value of the third point on the Y axis.
-#' @param y4 Value of the fourth point on the Y axis.
-#' @param y5 Value of the fifth point on the Y axis.
-#' @param y6 Value of the sixth point on the Y axis.
-#' @param x5 Value of the fifth point on the X axis.
-#' @param x6 Value of the sixth point on the X axis.
+#' @param xs Center point value on the X axis.
+#' @param ys Center point value on the Y axis.
+#' @param r Lenght from the center to the apex.
+#' @param alpha Angle of rotation.
 #'
 #' @return Numeric value
 #' @export

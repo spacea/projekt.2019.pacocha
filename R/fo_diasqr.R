@@ -10,14 +10,14 @@
 #' @param y1 Value of the first point on the Y axis.
 #' @param y2 Value of the second point on the Y axis.
 #' @param y3 Value of the third point on the Y axis.
-#' @param y3 Value of the fourth point on the Y axis.
+#' @param y4 Value of the fourth point on the Y axis.
 #'
 #' @return Numerical vector
 #' @export
 #'
 #' @examples
 #' fo_dia.sqr(0,0,1/2*sqrt(1),1/2*sqrt(1),0,sqrt(1),-1/2*sqrt(1),1/2*sqrt(1))
-#' fo_dia.sqr(0,0,5,0,5,5,0,5))
+#' fo_dia.sqr(0,0,5,0,5,5,0,5)
 fo_dia.sqr <- function(x1, y1, x2, y2, x3, y3, x4, y4){
   a <- length.line(x1, y1, x2, y2)
   if (fo_can.sqr(x1, y1, x2, y2, x3, y3, x4, y4) == FALSE){

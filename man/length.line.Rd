@@ -23,6 +23,6 @@ Function which caculates length of a line
 based on the position of its ends.
 }
 \examples{
-length.line(0,-10,0,10)
+length.line(0,-5,0,5)
 
 }
