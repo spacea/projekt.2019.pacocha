@@ -1,6 +1,6 @@
-#' Hexagon perimiter
+#' Hexagon perimeter
 #'
-#' @description Function which calculates perimiter of a hexagon.
+#' @description Function which calculates a perimeter of a hexagon.
 #'
 #' @param xs Center point value on the X axis.
 #' @param ys Center point value on the Y axis.

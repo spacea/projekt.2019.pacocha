@@ -11,7 +11,7 @@
 #' @param beta Angle between the basis and the left side of
 #' the parallelogram.
 #'
-#' @return Numerical vector
+#' @return Numeric vector
 #' @export
 #'
 #' @examples

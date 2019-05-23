@@ -8,7 +8,7 @@
 #' @param x2 Point on the circumference on the X axis.
 #' @param y2 Point on the circumference on the Y axis.
 #'
-#' @return Numerical vector
+#' @return Numeric vector
 #' @export
 #'
 #' @examples

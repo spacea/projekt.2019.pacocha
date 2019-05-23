@@ -1,6 +1,6 @@
-#' Triangle perimiter
+#' Triangle perimeter
 #'
-#' @description Function which calculates perimiter of a triangle.
+#' @description Function which calculates perimeter of a triangle.
 #'
 #' @param x1 Value of the first point on the X axis.
 #' @param x2 Value of the second point on the X axis.

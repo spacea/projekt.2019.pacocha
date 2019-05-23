@@ -19,8 +19,8 @@
 Numeric value
 }
 \description{
-Function which caculates length of a line
-based on the position of its ends.
+Function which calculates length of a line
+based on the position of its end points.
 }
 \examples{
 length.line(0,-5,0,5)

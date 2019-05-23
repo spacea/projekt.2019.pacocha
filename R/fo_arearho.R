@@ -4,8 +4,8 @@
 #'
 #' @param xs Center point value on the X axis.
 #' @param ys Center point value on the Y axis.
-#' @param r1 Lenght from the center to the apex.
-#' @param r2 Lenght from the center to the apex.
+#' @param r1 Length from the center to the apex.
+#' @param r2 Length from the center to the apex.
 #' @param alpha Angle of rotation.
 #'
 #' @return Numeric value

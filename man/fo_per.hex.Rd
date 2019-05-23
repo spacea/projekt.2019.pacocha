@@ -2,7 +2,7 @@
 % Please edit documentation in R/fo_perhex.R
 \name{fo_per.hex}
 \alias{fo_per.hex}
-\title{Hexagon perimiter}
+\title{Hexagon perimeter}
 \usage{
 fo_per.hex(xs, ys, r, alpha = 0)
 }
@@ -19,7 +19,7 @@ fo_per.hex(xs, ys, r, alpha = 0)
 Numeric value
 }
 \description{
-Function which calculates perimiter of a hexagon.
+Function which calculates a perimeter of a hexagon.
 }
 \examples{
 fo_per.hex(1,0,3, 45)

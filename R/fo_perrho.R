@@ -1,14 +1,14 @@
-#' Rhombus peremiter
+#' Rhombus perimeter
 #'
-#' @description Function which peremiter of a rhombus.
+#' @description Function which calculates a perimeter of a rhombus.
 #'
 #' @param xs Center point value on the X axis.
 #' @param ys Center point value on the Y axis.
-#' @param r1 Lenght from the center to the apex.
-#' @param r2 Lenght from the center to the apex.
+#' @param r1 Length from the center to the apex.
+#' @param r2 Length from the center to the apex.
 #' @param alpha Angle of rotation.
 #'
-#' @return Numerical vector
+#' @return Numeric vector
 #' @export
 #'
 #' @examples

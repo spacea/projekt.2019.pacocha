@@ -2,7 +2,7 @@
 % Please edit documentation in R/fo_pertri.R
 \name{fo_per.tri}
 \alias{fo_per.tri}
-\title{Triangle perimiter}
+\title{Triangle perimeter}
 \usage{
 fo_per.tri(x1, y1, x2, y2, x3, y3)
 }
@@ -23,7 +23,7 @@ fo_per.tri(x1, y1, x2, y2, x3, y3)
 Numeric value
 }
 \description{
-Function which calculates perimiter of a triangle.
+Function which calculates perimeter of a triangle.
 }
 \examples{
 fo_per.tri(0,0,0,1,15,15)

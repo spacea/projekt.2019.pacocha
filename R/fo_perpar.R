@@ -1,6 +1,6 @@
-#' Parallelogram perimiter
+#' Parallelogram perimeter
 #'
-#' @description Function which calculates a perimiter of a
+#' @description Function which calculates a perimeter of a
 #' parallelogram.
 #'
 #' @param xs Left down apex on the X axis.
@@ -11,7 +11,7 @@
 #' @param beta Angle between the basis and the left side of
 #' the parallelogram.
 #'
-#' @return Numerical vector
+#' @return Numeric vector
 #' @export
 #'
 #' @examples

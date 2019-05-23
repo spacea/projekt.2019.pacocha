@@ -19,7 +19,7 @@ fo_centerplot.hex(xs, ys, r, alpha = 0)
 Plot
 }
 \description{
-Function which plots hexagon made from its center.
+Function which plots a hexagon made from its center.
 }
 \examples{
 fo_centerplot.hex(0,0,3,45)

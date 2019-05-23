@@ -24,7 +24,7 @@ fo_area.sqr(x1, y1, x2, y2, x3, y3, x4, y4)
 \item{y4}{Value of the fourth point on the Y axis.}
 }
 \value{
-Numerical vector
+Numeric vector
 }
 \description{
 Function which calculates an area of a square

@@ -1,6 +1,6 @@
 #' Hexagon center plot
 #'
-#' @description Function which plots hexagon made from its center.
+#' @description Function which plots a hexagon made from its center.
 #'
 #' @param xs Center point value on the X axis.
 #' @param ys Center point value on the Y axis.

@@ -2,7 +2,7 @@
 % Please edit documentation in R/fo_parsqr.R
 \name{fo_per.sqr}
 \alias{fo_per.sqr}
-\title{Square perimiter}
+\title{Square perimeter}
 \usage{
 fo_per.sqr(x1, y1, x2, y2, x3, y3, x4, y4)
 }
@@ -27,7 +27,7 @@ fo_per.sqr(x1, y1, x2, y2, x3, y3, x4, y4)
 Numeric vector
 }
 \description{
-Function which calculates a perimiter of a square
+Function which calculates a perimeter of a square
 based on its apexes.
 }
 \examples{
