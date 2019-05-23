@@ -19,7 +19,7 @@ Jakub Pacocha - opracowanie: warunku prostopadłości, kwadratu, prostokąta, cz
 wykonanie opisów i dokumentacji projektu, zarządzanie biblioteką w Github.
 
 ## EN:
-Autors: Błażej Kościański, Patryk Połomski, Jakub Pacocha
+Authors: Błażej Kościański, Patryk Połomski, Jakub Pacocha
 
 Package: Figure operations
 
