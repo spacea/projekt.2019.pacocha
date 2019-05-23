@@ -27,5 +27,5 @@ Plot
 Function which plots a parallellogram.
 }
 \examples{
-fo_plot.par(0,0,3,3,0,360)
+fo_plot.par(0,0,3,3,0,30)
 }

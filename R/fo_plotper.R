@@ -14,7 +14,7 @@
 #' @export
 #'
 #' @examples
-#' fo_plot.par(0,0,3,3,0,360)
+#' fo_plot.par(0,0,3,3,0,30)
 fo_plot.par <- function(xs, ys, r1, r2, alpha, beta){
   if(is.numeric(xs) == FALSE){
     stop("First argument is non-numeric")
