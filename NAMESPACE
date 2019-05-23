@@ -2,7 +2,6 @@
 
 S3method(length,line)
 export(angle.cos)
-export(fo_area.cir)
 export(fo_area.hex)
 export(fo_area.par)
 export(fo_area.rec)
