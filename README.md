@@ -24,7 +24,7 @@ Authors: Błażej Kościański, Patryk Połomski, Jakub Pacocha
 Package: Figure operations
 
 Description: Operations on figures is a project co-created by three
-students of WNGiG UAM which consists creating a package containing functions
+students of WNGiG UAM which of consists creating a package containing functions
 enumerating the basic parameters of the most important geometric figures in
 two-dimensional Euclidean space and sketches them in this space.
 
