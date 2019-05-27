@@ -12,10 +12,10 @@
 #' @export
 #'
 #' @examples
-#' fo_plot.hex(1,0,3, 90)
+#' fo_plot_hex(1,0,3, 90)
 #'
 
-fo_plot.hex <- function(xs, ys, r, alpha = 0){
+fo_plot_hex <- function(xs, ys, r, alpha = 0){
 
   if(is.numeric(xs) == FALSE){
     stop("First argument is non-numeric")
@@ -98,13 +98,13 @@ fo_plot.hex <- function(xs, ys, r, alpha = 0){
   x <- c(xs, x1, x2, x3, x4, x5)
   y <- c(ys, y1, y2, y3, y4, y5)
 
-  plot(x, y)
+  graphics::plot(x, y)
 
-  lines(c(x[1], x[2]), c(y[1], y[2]))
-  lines(c(x[2], x[3]), c(y[2], y[3]))
-  lines(c(x[3], x[4]), c(y[3], y[4]))
-  lines(c(x[4], x[5]), c(y[4], y[5]))
-  lines(c(x[5], x[6]), c(y[5], y[6]))
-  lines(c(x[6], x[1]), c(y[6], y[1]))
+  graphics::lines(c(x[1], x[2]), c(y[1], y[2]))
+  graphics::lines(c(x[2], x[3]), c(y[2], y[3]))
+  graphics::lines(c(x[3], x[4]), c(y[3], y[4]))
+  graphics::lines(c(x[4], x[5]), c(y[4], y[5]))
+  graphics::lines(c(x[5], x[6]), c(y[5], y[6]))
+  graphics::lines(c(x[6], x[1]), c(y[6], y[1]))
 }
 

@@ -11,9 +11,9 @@
 #' @export
 #'
 #' @examples
-#' fo_per.hex(1,0,3, 45)
+#' fo_per_hex(1,0,3, 45)
 #'
-fo_per.hex <- function(xs, ys, r, alpha = 0){
+fo_per_hex <- function(xs, ys, r, alpha = 0){
   if(is.numeric(xs) == FALSE){
     stop("First argument is non-numeric")
   } else if(is.numeric(ys) == FALSE){

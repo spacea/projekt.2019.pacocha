@@ -15,8 +15,8 @@
 #' @export
 #'
 #' @examples
-#' fo_area.par(0,0,3,3,45,45)
-fo_area.par <- function(xs, ys, r1, r2, alpha, beta){
+#' fo_area_par(0,0,3,3,45,45)
+fo_area_par <- function(xs, ys, r1, r2, alpha, beta){
 
   if(is.numeric(xs) == FALSE){
     stop("First argument is non-numeric")

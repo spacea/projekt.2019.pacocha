@@ -12,9 +12,9 @@
 #' @export
 #'
 #' @examples
-#' fo_area.hex(1,0,3, 45)
+#' fo_area_hex(1,0,3, 45)
 #'
-fo_area.hex <- function(xs, ys, r, alpha = 0){
+fo_area_hex <- function(xs, ys, r, alpha = 0){
   if(is.numeric(xs) == FALSE){
     stop("First argument is non-numeric")
   } else if(is.numeric(ys) == FALSE){

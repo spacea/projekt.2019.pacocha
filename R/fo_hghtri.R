@@ -13,8 +13,8 @@
 #' @export
 #'
 #' @examples
-#' fo_hgh.tri(1, 0, 10, 0, 0, 10)
-fo_hgh.tri <- function(x1, y1, x2, y2, x3, y3){
+#' fo_hgh_tri(1, 0, 10, 0, 0, 10)
+fo_hgh_tri <- function(x1, y1, x2, y2, x3, y3){
   if(is.numeric(x1) == FALSE){
     stop("First argument is non-numeric")
   } else if(is.numeric(y1) == FALSE){

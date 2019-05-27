@@ -14,8 +14,8 @@
 #' @export
 #'
 #' @examples
-#' fo_plot.par(0,0,3,3,0,30)
-fo_plot.par <- function(xs, ys, r1, r2, alpha, beta){
+#' fo_plot_par(0,0,3,3,0,30)
+fo_plot_par <- function(xs, ys, r1, r2, alpha, beta){
   if(is.numeric(xs) == FALSE){
     stop("First argument is non-numeric")
   } else if(is.numeric(ys) == FALSE){
@@ -150,11 +150,11 @@ fo_plot.par <- function(xs, ys, r1, r2, alpha, beta){
   x <- c(xs, x1, x2, x3)
   y <- c(ys, y1, y2, y3)
 
-  plot(x, y)
+  graphics::plot(x, y)
 
-  lines(c(x[1], x[2]), c(y[1], y[2]))
-  lines(c(x[2], x[3]), c(y[2], y[3]))
-  lines(c(x[1], x[4]), c(y[1], y[4]))
-  lines(c(x[3], x[4]), c(y[3], y[4]))
+  graphics::lines(c(x[1], x[2]), c(y[1], y[2]))
+  graphics::lines(c(x[2], x[3]), c(y[2], y[3]))
+  graphics::lines(c(x[1], x[4]), c(y[1], y[4]))
+  graphics::lines(c(x[3], x[4]), c(y[3], y[4]))
 
 }

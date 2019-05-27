@@ -12,8 +12,8 @@
 #' @export
 #'
 #' @examples
-#' fo_per.rho(0,0,3,5,30)
-fo_plot.rho <- function(xs, ys, r1, r2, alpha){
+#' fo_per_rho(0,0,3,5,30)
+fo_plot_rho <- function(xs, ys, r1, r2, alpha){
 
   if(is.numeric(xs) == FALSE){
     stop("First argument is non-numeric")
@@ -95,10 +95,10 @@ fo_plot.rho <- function(xs, ys, r1, r2, alpha){
   x <- c(xs, x1, x2, x3, x4)
   y <- c(ys, y1, y2, y3, y4)
 
-  plot(x, y)
+  graphics::plot(x, y)
 
-  lines(c(x[2], x[3]), c(y[2], y[3]))
-  lines(c(x[3], x[4]), c(y[3], y[4]))
-  lines(c(x[4], x[5]), c(y[4], y[5]))
-  lines(c(x[5], x[2]), c(y[5], y[2]))
+  graphics::lines(c(x[2], x[3]), c(y[2], y[3]))
+  graphics::lines(c(x[3], x[4]), c(y[3], y[4]))
+  graphics::lines(c(x[4], x[5]), c(y[4], y[5]))
+  graphics::lines(c(x[5], x[2]), c(y[5], y[2]))
 }

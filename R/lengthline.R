@@ -12,9 +12,9 @@
 #' @export
 #'
 #' @examples
-#' length.line(0,-5,0,5)
+#' length_line(0,-5,0,5)
 #'
-length.line <- function(x1, y1, x2, y2){
+length_line <- function(x1, y1, x2, y2){
   if(is.numeric(x1) == FALSE){
     stop("First argument is non-numeric")
   } else if(is.numeric(y1) == FALSE){

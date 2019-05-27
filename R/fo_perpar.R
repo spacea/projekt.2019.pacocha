@@ -15,8 +15,8 @@
 #' @export
 #'
 #' @examples
-#' fo_per.par(0,0,3,3,45,150)
-fo_per.par <- function(xs, ys, r1, r2, alpha, beta){
+#' fo_per_par(0,0,3,3,45,150)
+fo_per_par <- function(xs, ys, r1, r2, alpha, beta){
   if(is.numeric(xs) == FALSE){
     stop("First argument is non-numeric")
   } else if(is.numeric(ys) == FALSE){
