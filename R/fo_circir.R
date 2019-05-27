@@ -12,9 +12,9 @@
 #' @export
 #'
 #' @examples
-#' fo_cir.cir(1,1,2,2)
-#' fo_cir.cir(123,254,234,764)
-fo_cir.cir <- function(x1,y1,x2,y2) { #cirumference
+#' fo_cir_cir(1,1,2,2)
+#' fo_cir_cir(123,254,234,764)
+fo_cir_cir <- function(x1,y1,x2,y2) { #cirumference
   r <- sqrt(((x2 - x1)^2) + ((y2 - y1)^2))
   if(is.numeric(r) == FALSE){
     stop("Argument is non-numeric")

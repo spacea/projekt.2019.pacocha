@@ -13,8 +13,8 @@
 #' @export
 #'
 #' @examples
-#' fo_area.tri(2,0,10,10,5,3)
-fo_area.tri <- function(x1, y1, x2, y2, x3, y3){
+#' fo_area_tri(2,0,10,10,5,3)
+fo_area_tri <- function(x1, y1, x2, y2, x3, y3){
   if(is.numeric(x1) == FALSE){
     stop("First argument is non-numeric")
   } else if(is.numeric(y1) == FALSE){
@@ -32,4 +32,3 @@ fo_area.tri <- function(x1, y1, x2, y2, x3, y3){
   }
 }
 
-fo_area.tri(2,0,10,10,5,3)

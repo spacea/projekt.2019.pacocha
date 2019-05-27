@@ -11,9 +11,9 @@
 #' @export
 #'
 #' @examples
-#' fo_centerplot.hex(0,0,3,45)
+#' fo_centerplot_hex(0,0,3,45)
 #'
-fo_centerplot.hex <- function(xs, ys, r, alpha = 0){
+fo_centerplot_hex <- function(xs, ys, r, alpha = 0){
 
   if(is.numeric(xs) == FALSE){
     stop("First argument is non-numeric")
@@ -99,13 +99,13 @@ fo_centerplot.hex <- function(xs, ys, r, alpha = 0){
   x <- c(xs, x1, x2, x3, x4, x5, x6)
   y <- c(ys, y1, y2, y3, y4, y5, y6)
 
-  plot(x, y)
+  graphics::plot(x, y)
 
-  lines(c(x[2], x[3]), c(y[2], y[3]))
-  lines(c(x[3], x[4]), c(y[3], y[4]))
-  lines(c(x[4], x[5]), c(y[4], y[5]))
-  lines(c(x[5], x[6]), c(y[5], y[6]))
-  lines(c(x[6], x[7]), c(y[6], y[7]))
-  lines(c(x[7], x[2]), c(y[7], y[2]))
+  graphics::lines(c(x[2], x[3]), c(y[2], y[3]))
+  graphics::lines(c(x[3], x[4]), c(y[3], y[4]))
+  graphics::lines(c(x[4], x[5]), c(y[4], y[5]))
+  graphics::lines(c(x[5], x[6]), c(y[5], y[6]))
+  graphics::lines(c(x[6], x[7]), c(y[6], y[7]))
+  graphics::lines(c(x[7], x[2]), c(y[7], y[2]))
 }
 

@@ -13,8 +13,8 @@
 #' @export
 #'
 #' @examples
-#' fo_per.tri(0,0,0,1,15,15)
-fo_per.tri <- function(x1, y1, x2, y2, x3, y3){
+#' fo_per_tri(0,0,0,1,15,15)
+fo_per_tri <- function(x1, y1, x2, y2, x3, y3){
   if(is.numeric(x1) == FALSE){
     stop("First argument is non-numeric")
   } else if(is.numeric(y1) == FALSE){

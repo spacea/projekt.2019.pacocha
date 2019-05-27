@@ -13,14 +13,15 @@
 #' @export
 #'
 #' @examples
-#' fo_plot.tri(0, 0, 1, 0, 0, 1)
+#' fo_plot_tri(0, 0, 1, 0, 0, 1)
 
-fo_plot.tri <- function(x1, y1, x2, y2, x3, y3){
+fo_plot_tri <- function(x1, y1, x2, y2, x3, y3){
 
   x <- c(x1, x2, x3)
   y <- c(y1, y2, y3)
-  plot(x, y)
-  lines(c(x[1], x[2]), c(y[1], y[2]))
-  lines(c(x[2], x[3]), c(y[2], y[3]))
-  lines(c(x[1], x[3]), c(y[1], y[3]))
+  graphics::plot(x, y)
+  graphics::lines(c(x[1], x[2]), c(y[1], y[2]))
+  graphics::lines(c(x[2], x[3]), c(y[2], y[3]))
+  graphics::lines(c(x[1], x[3]), c(y[1], y[3]))
 }
+

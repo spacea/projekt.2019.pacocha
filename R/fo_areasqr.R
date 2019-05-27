@@ -16,11 +16,11 @@
 #' @export
 #'
 #' @examples
-#' fo_area.sqr(0,0,1/2*sqrt(1),1/2*sqrt(1),0,sqrt(1),-1/2*sqrt(1),1/2*sqrt(1))
-#' fo_area.sqr(0,0,5,0,5,5,0,5)
-fo_area.sqr <- function(x1, y1, x2, y2, x3, y3, x4, y4){
-  a <- length.line(x1, y1, x2, y2)
-  if (fo_can.sqr(x1, y1, x2, y2, x3, y3, x4, y4) == FALSE){
+#' fo_area_sqr(0,0,1/2*sqrt(1),1/2*sqrt(1),0,sqrt(1),-1/2*sqrt(1),1/2*sqrt(1))
+#' fo_area_sqr(0,0,5,0,5,5,0,5)
+fo_area_sqr <- function(x1, y1, x2, y2, x3, y3, x4, y4){
+  a <- length_line(x1, y1, x2, y2)
+  if (fo_can_sqr(x1, y1, x2, y2, x3, y3, x4, y4) == FALSE){
     stop("The geometric figure is not a square")
   } else {
     a ^ 2

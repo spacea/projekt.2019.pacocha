@@ -12,8 +12,8 @@
 #' @export
 #'
 #' @examples
-#' fo_area.rho(0,0,3,5,30)
-fo_area.rho <- function(xs, ys, r1, r2, alpha){
+#' fo_area_rho(0,0,3,5,30)
+fo_area_rho <- function(xs, ys, r1, r2, alpha){
   if(is.numeric(xs) == FALSE){
     stop("First argument is non-numeric")
   } else if(is.numeric(ys) == FALSE){

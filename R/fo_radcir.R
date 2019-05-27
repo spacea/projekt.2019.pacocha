@@ -12,8 +12,8 @@
 #' @export
 #'
 #' @examples
-#' fo_rad.cir(1,1,2,2)
-fo_rad.cir <- function(x1,y1,x2,y2){
+#' fo_rad_cir(1,1,2,2)
+fo_rad_cir <- function(x1,y1,x2,y2){
   if(is.numeric(x1) == FALSE){
     stop("First argument is non-numeric")
   } else if(is.numeric(y1) == FALSE){

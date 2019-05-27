@@ -12,8 +12,8 @@
 #' @export
 #'
 #' @examples
-#' fo_per.rho(0,0,1,2,30)
-fo_per.rho <- function(xs, ys, r1, r2, alpha){
+#' fo_per_rho(0,0,1,2,30)
+fo_per_rho <- function(xs, ys, r1, r2, alpha){
   if(is.numeric(xs) == FALSE){
     stop("First argument is non-numeric")
   } else if(is.numeric(ys) == FALSE){

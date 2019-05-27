@@ -16,29 +16,29 @@
 #' @export
 #'
 #' @examples
-#' fo_can.rec(0,0,4,0,4,5,0,5)
-#' fo_can.rec(-5,-5,5,-5,5,5,-5,5)
-fo_can.rec <- function(x1, y1, x2, y2, x3, y3, x4, y4){
-  a <- length.line(x1, y1, x2, y2)
-  b <- length.line(x2, y2, x3, y3)
-  c <- length.line(x3, y3, x4, y4)
-  d <- length.line(x4, y4, x1, y1)
-  if(angle.cos(x1, y1, x2, y2, x4, y4) == 0){
+#' fo_can_rec(0,0,4,0,4,5,0,5)
+#' fo_can_rec(-5,-5,5,-5,5,5,-5,5)
+fo_can_rec <- function(x1, y1, x2, y2, x3, y3, x4, y4){
+  a <- length_line(x1, y1, x2, y2)
+  b <- length_line(x2, y2, x3, y3)
+  c <- length_line(x3, y3, x4, y4)
+  d <- length_line(x4, y4, x1, y1)
+  if(angle_cos(x1, y1, x2, y2, x4, y4) == 0){
     TRUE
   } else {
     stop("The geometric figure is not a rectangle")
   }
-  if(angle.cos(x2, y2, x3, y3, x1, y1) == 0){
+  if(angle_cos(x2, y2, x3, y3, x1, y1) == 0){
     TRUE
   } else {
     stop("The geometric figure is not a rectangle")
   }
-  if(angle.cos(x3, y3, x4, y4, x2, y2) == 0){
+  if(angle_cos(x3, y3, x4, y4, x2, y2) == 0){
     TRUE
   } else {
     stop("The geometric figure is not a rectangle")
   }
-  if(angle.cos(x4, y4, x1, y1, x3, y3) == 0){
+  if(angle_cos(x4, y4, x1, y1, x3, y3) == 0){
     TRUE
   } else {
     stop("The geometric figure is not a rectangle")

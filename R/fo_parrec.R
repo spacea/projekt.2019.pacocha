@@ -16,12 +16,12 @@
 #' @export
 #'
 #' @examples
-#' fo_per.rec(0,0,4,0,4,5,0,5)
-#' fo_per.rec(-5,-5,5,-5,5,5,-5,5)
-fo_per.rec <- function(x1, y1, x2, y2, x3, y3, x4, y4){
-  a <- length.line(x1, y1, x2, y2)
-  b <- length.line(x2, y2, x3, y3)
-  if (fo_can.rec(x1, y1, x2, y2, x3, y3, x4, y4) == FALSE){
+#' fo_per_rec(0,0,4,0,4,5,0,5)
+#' fo_per_rec(-5,-5,5,-5,5,5,-5,5)
+fo_per_rec <- function(x1, y1, x2, y2, x3, y3, x4, y4){
+  a <- length_line(x1, y1, x2, y2)
+  b <- length_line(x2, y2, x3, y3)
+  if (fo_can_rec(x1, y1, x2, y2, x3, y3, x4, y4) == FALSE){
     stop("The geometric figure is not a rectangle")
   } else {
     2 * a + 2 * b
