@@ -9,7 +9,6 @@
 #' @param y2 Value of the second point on the Y axis.
 #'
 #' @return Numeric value
-#' @export
 #'
 #' @examples
 #' length_line(0,-5,0,5)
