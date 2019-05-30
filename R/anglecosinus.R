@@ -10,7 +10,6 @@
 #' @param y3 Value of the third point on the Y axis.
 #'
 #' @return Numeric value
-#' @export
 #'
 #' @examples
 #' angle_cos(0, 0, 1, 0, 1, 1)
