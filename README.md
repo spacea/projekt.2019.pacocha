@@ -1,6 +1,6 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-projekt.2019.pacocha
+Operations of figures
 ====================
 
 <!-- badges: start -->
