@@ -1,9 +1,11 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-Operations of figures
+Operations on figures
 ====================
 
 <!-- badges: start -->
+[![Lifecycle:
+stable](https://img.shields.io/badge/lifecycle-stable-green.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 <!-- badges: end -->
 Authors: Błażej Kościański, Patryk Połomski, Jakub Pacocha
 
